@@ -1,4 +1,5 @@
 \documentclass[a4paper,11pt]{article}
+\usepackage{graphicx}
 \begin{document}
 \begin{center}
 
@@ -42,7 +43,13 @@ Jessica and Michelle\\
 Jimmy\\
 Ephi\\
 Thabang\\
+\\
 Prenolan\\
+\textbf{Important}: Voting on and evaluation of posts.
+\\
+\textbf{Nice-To-Have}: Marking a post as the best answer.
+\\
+\\
 Lutfiyya\\
 Maria\\
 
@@ -52,7 +59,26 @@ Jessica and Michelle\\
 Jimmy\\
 Ephi\\
 Thabang\\
-Prenolan\\
+\\
+Prenolan
+\subsubsection{Voting and Evaluation}
+\textbf{Pre-Condition}: A post has to have been created for a user to be able to vote on or evaluate it. Any user can vote on or evaluate a post as long as the user is logged in and a part of a specific Buzz Space. An exception to this rule is when the administration of a Buzz Space set specific rules as to which users (perhaps based on status) can vote on or evaluate posts.
+\\
+\textbf{Post-Condition:} A vote or evaluation has to be visible to every user (or only some based on the administration of that space) after it has been made on a post. A positive vote or evaluation has to reflect upon the posters progress to the next status level.
+\\
+\\
+\includegraphics{Images/VotesAndEvaluation/Class_Diagram__Input}
+\includegraphics{Images/VotesAndEvaluation/Class_Diagram__Output}
+\\
+\subsubsection{Best Answer}
+\textbf{Pre-Condition}: A user must have the privileges set by the administration of a space in order to mark a post as the best answer. The user is required to be logged in.
+\\
+\textbf{Post-Condition}: The thread should effectively display that an answer has been selected and optionally close the thread. The poster of the best answer should acquire an increase in progress to the next status level.
+\\
+\\
+\includegraphics{Images/BestAnswer/Class_Diagram}
+\\
+\\
 Lutfiyya\\
 Maria\\
 
@@ -62,6 +88,13 @@ Jimmy\\
 Ephi\\
 Thabang\\
 Prenolan\\
+\begin{center}
+\includegraphics[width=0.9\linewidth]{./Images/VotesAndEvaluation/functional_requirements}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.9\linewidth]{./Images/BestAnswer/functional_requirements}
+\end{center}
 Lutfiyya\\
 Maria\\
 
@@ -71,6 +104,13 @@ Jimmy\\
 Ephi\\
 Thabang\\
 Prenolan\\
+\begin{center}
+\includegraphics[width=0.9\linewidth]{./Images/VotesAndEvaluation/process_specification}
+\end{center}
+
+\begin{center}
+\includegraphics[width=0.9\linewidth]{./Images/BestAnswer/process_spec}
+\end{center}
 Lutfiyya\\
 Maria\\
 
