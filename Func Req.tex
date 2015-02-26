@@ -258,35 +258,47 @@ Maria Qumalo&29461775\\
 %PRENOLAN
 \section{Mark solution post}
 \subsection*{Description:}
+This use case allows a user or an owner of a thread to choose or mark a post in that thread as being the best answer, which should then elevate that post in the thread and should make in turn make the post easily visible as one enters the thread.
 \subsection{Prioritization:} 
+\textbf{Nice-To-Have}: Marking a post as the best answer.
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+A user must have the privileges set by the administration of a space in order to mark a post as the best answer. The user is required to be logged in.
 \subsubsection*{Post-Conditions:}
+The thread should effectively display that an answer has been selected and optionally close the thread. The poster of the best answer should acquire an increase in progress to the next status level.
 \subsubsection*{Requests and Results Data Structures:}
+\includegraphics{Images/BestAnswer/Class_Diagram}
 \subsection{Required Functionality:} 
+\begin{center}
+\includegraphics[width=0.9\linewidth]{./Images/BestAnswer/functional_requirements}
+\end{center}
 \subsection{Process Specifications:} 
+\begin{center}
+\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/process_spec}
+\end{center}
 
 %PRENOLAN
-\section{Evaluate Posts}
+\section{Vote and Evaluate Posts}
 \subsection*{Description:}
+This use case refers to the ability of a user to either vote up or down a post; a higher vote count on a post indicates the usefulness of a post. It also refers to a user being able to evaluate or give feedback on another users post.
 \subsection{Prioritization:} 
+\textbf{Important}: Voting on and evaluation of posts.
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+A post has to have been created for a user to be able to vote on or evaluate it. Any user can vote on or evaluate a post as long as the user is logged in and a part of a specific Buzz Space. An exception to this rule is when the administration of a Buzz Space set specific rules as to which users (perhaps based on status) can vote on or evaluate posts.
 \subsubsection*{Post-Conditions:}
+A vote or evaluation has to be visible to every user (or only some based on the administration of that space) after it has been made on a post. A positive vote or evaluation has to reflect upon the posters progress to the next status level.
 \subsubsection*{Requests and Results Data Structures:}
+\includegraphics{Images/VotesAndEvaluation/Class_Diagram__Input}
+\includegraphics{Images/VotesAndEvaluation/Class_Diagram__Output}
 \subsection{Required Functionality:} 
+\begin{center}
+\includegraphics[width=0.9\linewidth]{./Images/VotesAndEvaluation/functional_requirements}
+\end{center}
 \subsection{Process Specifications:} 
-
-%PRENOLAN
-\section{Post Voting}
-\subsection*{Description:}
-\subsection{Prioritization:} 
-\subsection{Conditions and Data Structures:}
-\subsubsection*{Pre-Conditions:}
-\subsubsection*{Post-Conditions:}
-\subsubsection*{Requests and Results Data Structures:}
-\subsection{Required Functionality:} 
-\subsection{Process Specifications:} 
+\begin{center}
+\includegraphics[width=1\linewidth]{./Images/VotesAndEvaluation/process_specification}
+\end{center}
 
 %MARIA
 \section{Post Tagging}
@@ -423,7 +435,7 @@ Maria Qumalo&29461775\\
 \subsection{Required Functionality:}
 \includegraphics{Images/UserProfile/ModifyUserProfile}
 \subsection{Process Specifications:} 
-\includegraphics{Images/UserProfile/ModifyUserProfileActivity}
+\includegraphics{Images/UserProfile/ModifyUserProfileAcvitiy}
 
 %EPHI
 \section{Create Profile}
