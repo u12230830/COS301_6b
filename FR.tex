@@ -43,6 +43,11 @@ Maria Qumalo&29461775\\
 
 \subsection{Use case prioritization}
 Jessica and Michelle\\
+\textbf{Critical}: CRUD Posts.\\
+\textbf{Critical}: CRUD BuzzSpace.\\
+\textbf{Critical}: Login.
+\\
+\\
 Jimmy\\
 \textbf{Critical}: Closing threads is very essential in maintaining order within the system. If a final answer to any query has been reached then there should be no further discussion regarding it. Alternatively, a request can be sent to the administrator to reopen the thread should there be any further developments with regard to the given problem.
 \textbf{Critical}: The Hiding of Threads is also very essential to the integrity of the system. This allows the administrator to use their own discretion with regard to the given thread. If the content of the thread is misleading, vulgar, plagiarized etc. it is up to the administrator to see to it that the thread is blocked or hidden from other users to avoid any conflict.
@@ -53,6 +58,8 @@ Jimmy\\
 \\
 Ephi\\
 \textbf{Critical}: Management of user profiles.
+\\
+\\
 Thabang\\
 \\
 Prenolan\\
@@ -70,7 +77,46 @@ Maria\\
 
 \subsection{Use case/ Services contracts}
 Jessica and Michelle\\
+\subsubsection{CRUD BuzzSpace}
+\textbf{Pre-Condition:} User who want to create the BuzzSpace must be registered (if for a specific module, user must be registered for that module too) and logged in.
+User must have the necessary permissions to create, update and delete a BuzzSpace.
+No BuzzSpace with the same name may be created.
+\\
+\textbf{Post-Condition:} BuzzSpace will be archived for future reference.
+\\
+\textbf{Request and Results Data Structure:}
+\\
+\\
+\subsubsection{CRUD Posts}
+\textbf{Pre-Condition:} The user must be registered to the BuzzSpace to which he/she wants to CRUD a post.
+The user must be logged in (except with read – will use “Guest user”).
+To update and delete other users’ posts, the user should have certain permissions before it can be done.
+User must adhere to length restriction on a certain level.
+User must have a high enough status to post on a certain level.
+\\
+\textbf{Post-Condition:}If a post is read, it will be displayed as a read post.
+If a post is updated, everyone who has read that certain post before, will be notified, and also the creator of the thread (even if he has not read it).
+If a post is deleted, the creator of the thread will be notified.
+After posting the user’s status should be changed according to the post.
+If plagiarism is detected, notify the creator of the thread and BuzzSpace so that they can decide what to do (delete or update that post).
+\\
+\textbf{Request and Results Data Structure:}
+\\
+\\
+
+\subsubsection{Login}
+\textbf{Pre-Condition:} User must be registered.
+\\
+\textbf{Post-Condition:} User is now able to create, update and delete posts(his/her own) and have access to other functionality features.
+\\
+\textbf{Request and Results Data Structure:}
+\\
+\\
+
 Jimmy\\
+<<<<<<< HEAD
+
+=======
 \subsection{Summarizing threads}
 \textbf{Pre-Condition}: The thread has exist.
 \textbf{Pre-Condition}: The thread has to be closed. A conclusion was reached.
@@ -99,6 +145,7 @@ Jimmy\\
 \\
 \textbf{Post-Condition}: The thread must still exist.
 \textbf{Post-Condition}: The thread may or may not exist depending on the relevance to the space.
+>>>>>>> origin/master
 Ephi\\
 \subsubsection{Managing User Profile}
 \textbf{Pre-Condition}: A user must be a registered member of the university and a registered member of one or more modules available on the BuzzSpace.
@@ -106,13 +153,19 @@ Ephi\\
 \textbf{Post-Condition}: The user is registed and can now login thus it is now possible for the user to comment, tag and vote for threads on the BuzzSpace. The user now has a profile on the BuzzSpce meaning the can have a status, thus enabling diffent functionality at different status levels.
 \\
 \\
+<<<<<<< HEAD
 \includegraphics{Images/ManageUserProfile/Class_Dragram_Inputs}
+=======
+\includegraphics{Images/ManageUserProfile/Class_Diagram_Inputs}
+>>>>>>> origin/master
 \includegraphics{Images/ManageUserProfile/Class_Diagram_Outputs}
 \\
+
 Thabang\\
 \subsubsection{Filtering}
 \textbf{Description:}This module provides a search and filter functionality. Users can filter the Buzz Space by tags, date,user or by user-rating. They can also search through the Buzz Space by entering a search-phrase in a search box, alternatively they can both search and filter i.e filter the search-results by tags, date, user or user-rating. 
 \\
+<<<<<<< HEAD
 \textbf{Pre-Condition:} A specific Buzz Space has to have been created for a user to be able to search and/or filter.
 \\
 \textbf{Post-Condition:} Upon clicking the submit button, the search and/or filter results will be automatically displayed for the user to see.
@@ -139,6 +192,8 @@ Thabang\\
 \includegraphics{Images/SearchAndFilter/SearchAndFilter_processSpecification}
 \\
 \\
+=======
+>>>>>>> origin/master
 
 Prenolan
 \subsubsection{Voting and Evaluation}
