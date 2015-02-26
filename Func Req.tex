@@ -60,44 +60,76 @@ Maria Qumalo&29461775\\
 %-------------------------------------------------------START EDITING HERE FOR BUZZSPACE HANDLING------------------------------------------------------------
 %MICHELLE
 \section{Create BuzzSpace}
-\subsection*{Description:}
-\subsection{Prioritization:}
+\subsection*{Description:}This use case encapsulates the ability for a user to create a new BuzzSpace that will be associated with a specific acitve module. 
+Each BuzzSpace will have a root thread to start with. The creator of the BuzzSpace will set properties of the BuzzSpace (i.e which status is needed for a user 
+to do what). 
+\subsection{Prioritization:}Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user wanting to create a new BuzzSpace should be logged in to the system and should be registered with the module for which he/she wants to
+	create the BuzzSapce. 
+	\item The user should have a high enough status to be allowed to create a BuzzSpace (i.e. lecturer status).
+	\item The module for which the BuzzSpace is being created must be an active module at that time.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item A message is displayed to inform the creator of the BuzzSpace that the creation has been successful. Users can now start more threads on this BuzzSpace.
+	\item If this service has been rejected, an exceoption is thrown and an error message will be displayed to the user.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
 \section{Read BuzzSpace}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case includes the ability to view BuzzSpaces, this is, to view the different threads in the BuzzSpace (and thus have acces to them), and also to view the
+properties of the specific BuzzSpace (i.e. the permissions that were set, date of creation and the creator of this thread).
+\subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
-\subsubsection*{Pre-Conditions:}
+\subsubsection*{Pre-Conditions:}None 
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item Threads can now be viewed and accessed, and the properties can also be viewed.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
 \section{Update BuzzSpace}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case gives the ability for a user with a high enough status (lecturer status) to change the permissions needed for certain actions of this BuzzSpace. 
+\subsection{Prioritization:} Important
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be logged in and registered for the module that the BuzzSpace is in.
+	\item The user must have lecturer status to be able to update threads.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item A message is displayed to let the user knnow that the update has been done successfully
+	\item If the service was rejected, an exception is thrown and an error message is displayed to let the user know.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
 \section{Delete BuzzSpace}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case includes the ability to delete a BuzzSpace when the module is not active anymore, or the BuzzSpace is not used anymore. Only the creator of the 
+BuzzSpace will be able to delete a BuzzSpace, except if he changed the property to let anyone of a certain status be abe to delete it.
+\subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be logged in
+	\item The user must be the creator of the thread or must have a high enough status (if the permission for this was customized).
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item The BuzzSpace is deleted and archived for future reference. 
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -118,7 +150,7 @@ Maria Qumalo&29461775\\
 \subsection*{Description:}
 1.	User activates â€œCreate Threadâ€ function by selecting the â€œCreate Threadâ€ option.\\
 2.	System responds by presenting user with a form to create thread topic etc\\
-3.	User fills in form ïƒ  topic of thread, tags, etc and submits the form\\
+3.	User fills in form ïƒ  topic of thread, tags, etc and submits the form\\
 4.	System reviews the submitted information and  verifies users status and privileges, decorates the thread as needed and checks that all requirements (rules) are followed by the user based on his/her status\\
 5.	 System displays either an acknowledgement or error message based on the pervious checkpoint.
 \subsection{Prioritization:} 
@@ -470,9 +502,9 @@ as posts created by other users.
 \\Follow different authors of posts and index topics and subjects according to tags.
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
-\textbf A post must not have been previously marked as a tag. If ther are any keywords that look like "links" and have a hash symbol infront of them within the post, that post may be seen as alrady tagged.
+\textbf A post must not have been previously marked as a tag. If there are any keywords that look like "links" and have a hash symbol infront of them within the post, that post may be seen as already tagged.
 \subsubsection*{Post-Conditions:}
-\textbf A post becomes a tagged post if it has a words with in it that have a hash symbol in front of them.
+\textbf A post becomes a tagged post if it has words with in it that have a hash symbol in front of them.
 \\ words that are tags must change colour and become links.
 \\The user can now index topics, follow different authors, sort and view posts according to the tagged topics.
 
@@ -638,9 +670,9 @@ Sequence Diagram\\
 \textbf{}User keeps already existing profile: User had logged into the system and the profile had not been modified. 
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:}
-\includegraphics{Images/UserProfile/ModifyUserProfile}
+\includegraphics[width=1\linewidth]{Images/UserProfile/ModifyUserProfile}
 \subsection{Process Specifications:} 
-\includegraphics{Images/UserProfile/ModifyUserProfileAcvitiy}
+\includegraphics[width=1\linewidth]{Images/UserProfile/ModifyUserProfileAcvitiy}
 
 %EPHI
 \section{Create Profile}
