@@ -1,4 +1,4 @@
-\documentclass[a4paper,11pt]{article}
+﻿\documentclass[a4paper,11pt]{article}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \setcounter{tocdepth}{1}
@@ -289,10 +289,17 @@ Sequence Diagram\\
 %JIMMY
 \section{Summarise Thread}
 \subsection*{Description:}
-\subsection{Prioritization:} 
+Since a thread can, in theory, grow infinitely long, It is therefor necessary to show only the important aspects of the thread. These are the root post in the thread, the declared answer in the thread and the thread's social tags.\\
+\subsection{Prioritization:}
+This feature is Nice-To-Have. The system will not be immensly devalued if this feature is not added.\\ 
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+1.	The thread must be closed (No longer open for discussion).\\
+2.	User must be logged on as the system administrator to summarise a thread.\\
+3.	The thread must be more than 3 posts long.\\
 \subsubsection*{Post-Conditions:}
+1.	The thread is summarised successfully if all pre-conditions are me.\\
+2.	The system displays an error message if at least one of the pre-conditions are violated.\\
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -300,10 +307,18 @@ Sequence Diagram\\
 %JIMMY
 \section{Hide Thread}
 \subsection*{Description:}
-\subsection{Prioritization:} 
+Hiding a thread is when the System administrator makes the thread invisible to the user but not to the system. It is necessary for cases like when a thread is under plagiarism investigations or when the discussion is considered inappropriate. It will still exist in the Buzz space but users will not see it and, in turn, add onto it. \\
+\subsection{Prioritization:}
+It is considered critical to the system. It remains key that the system maintains its credibility and integrity at all times. This avoids conflicts and legal issues that may arise.\\ 
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+1.	The user must be logged on as a system administrator.\\
+2.	The thread must have been flagged by the system for plagiarism or other questionable characteristics such as vulgar language or slander.\\
 \subsubsection*{Post-Conditions:}
+1.	The thread is successfully hidden from the user if all pre-conditions are met.\\
+2.	The thread is still visible to the system.\\
+3.	A notification is sent to the owner of the thread that it is pending investigation.\\
+4.	The thread remains unhidden and an error message is shown if at least one of the pre-conditions aren't met.\\
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -311,10 +326,16 @@ Sequence Diagram\\
 %JIMMY
 \section{Close Thread}
 \subsection*{Description:}
-\subsection{Prioritization:} 
+Once a best answer has been agreed upon by the thread owner and users, it is no longer necessary for the thread to be open to discussion. It is therefore preferable for it to be available for viewing and not commenting on. It is considered closed when this happens. \\
+\subsection{Prioritization:}
+This feature is considered important. The system can cope without it but it is not preferable because threads can grow to be very long.\\
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+1.	The user must be logged in as an administrator.\\
+2.	The a best answer has to have been chosen by the thread owner based on his or her discretion and votes from the users.\\
 \subsubsection*{Post-Conditions:}
+1.	An error message is shown if at least one of the pre-conditions have been violated.\\
+2.	The thread is closed successfully if the pre-conditions have been met or open otherwise.\\
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -322,10 +343,16 @@ Sequence Diagram\\
 %JIMMY
 \section{Move Thread}
 \subsection*{Description:}
+Moving a thread can entail either deleting it from its original Buzz space to a different one or duplicating it. The former is necessary when a thread is not relevant to the Buzz space in question while the latter is important when it is relevant to both.\\
 \subsection{Prioritization:} 
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+1.	The user must be logged in as an administrator.\\
+2.	The thread owner must have given constent for the contents of the thread to be moved.\\
 \subsubsection*{Post-Conditions:}
+1.	An error message is displayed if the user is not logged on as admin.\\
+2.	The thread is successfully moved if both pre-conditions are met.\\
+3.	The thread owner is notified if the thread is successfully moved.\\
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
