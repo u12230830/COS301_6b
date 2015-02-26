@@ -432,14 +432,45 @@ A vote or evaluation has to be visible to every user (or only some based on the 
 %MARIA
 \section{Post Tagging}
 \subsection*{Description:}
-\textbf{Description:}One very important functional requierment is the ability for the user to structure the information and content comming in according to his own preferance and needs. Socilal tagging will enable him to do so.
+\textbf{Brief}:One very important functional requierment is the ability for the user to structure the information and content according to his own preferance and needs. Socilal tagging is the feaure that will enable him to do so
 \subsection{Prioritization:} 
+\textbf{Case-Priority - Important}: The user should be able to tag topics of   interest in the post they created, as well
+as posts created by other users.
+\\Social tagging saves time and keeps user up to date with latest news and post regarding tagged topics
+\\Users can: 
+\\View posts according to tags.
+\\Sort posts according to tags.
+\\Follow different authors of posts and index topics and subjects according to tags.
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\textbf A post must not have been previously marked as a tag. If ther are any keywords that look like "links" and have a hash symbol infront of them within the post, that post may be seen as alrady tagged.
 \subsubsection*{Post-Conditions:}
+\textbf A post becomes a tagged post if it has a words with in it that have a hash symbol in front of them.
+\\ words that are tags must change colour and become links.
+\\The user can now index topics, follow different authors, sort and view posts according to the tagged topics.
+
 \subsubsection*{Requests and Results Data Structures:}
+
+\begin{center}
+\includegraphics[width=0.9\linewidth]{Tag_Input_Output_ClassDiagram}
+\end{center}
+
+\textbf Figure 1: Input and Output classes showing potential attributes and operations *logedIn: boolean = true.
+
 \subsection{Required Functionality:} 
+\begin{center}
+\includegraphics[width=0.9\linewidth]{Tagging_Functional_Requirements}
+\end{center}
+
+\textbf Figure 2: A UML use case diagram showing the required functionality for tagging posts.
+
 \subsection{Process Specifications:} 
+
+\begin{center}
+\includegraphics[width=0.9\linewidth]{Tagging_Activity_Diagram}
+\end{center}
+
+\textbf Figure 3: An activity diargram showing the process in wich tags are made and organized. 
 
 %LEAVE
 \newpage
