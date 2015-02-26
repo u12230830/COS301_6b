@@ -106,11 +106,40 @@ Ephi\\
 \textbf{Post-Condition}: The user is registed and can now login thus it is now possible for the user to comment, tag and vote for threads on the BuzzSpace. The user now has a profile on the BuzzSpce meaning the can have a status, thus enabling diffent functionality at different status levels.
 \\
 \\
-\includegraphics{Images/ManageUserProfile/Class_Diagram_Input}
-\includegraphics{Images/ManageUserProfile/Class_Diagram_Output}
+\includegraphics{Images/ManageUserProfile/Class_Dragram_Inputs}
+\includegraphics{Images/ManageUserProfile/Class_Diagram_Outputs}
 \\
 Thabang\\
+\subsubsection{Filtering}
+\textbf{Description:}This module provides a search and filter functionality. Users can filter the Buzz Space by tags, date,user or by user-rating. They can also search through the Buzz Space by entering a search-phrase in a search box, alternatively they can both search and filter i.e filter the search-results by tags, date, user or user-rating. 
 \\
+\textbf{Pre-Condition:} A specific Buzz Space has to have been created for a user to be able to search and/or filter.
+\\
+\textbf{Post-Condition:} Upon clicking the submit button, the search and/or filter results will be automatically displayed for the user to see.
+\\
+\\
+\includegraphics{Images/SearchAndFilter/Filter_input_output}
+\\
+\includegraphics{Images/SearchAndFilter/Search_Input_output}
+\\
+\includegraphics{Images/SearchAndFilter/SearchAndFilter_input_output}
+\\
+\\
+\textbf{Required Functionality/Use case diagram}
+\\
+\includegraphics{Images/SearchAndFilter/SearchAndFilter_usecase}
+\\
+\\
+\textbf{Process specifications}
+\\
+\includegraphics{Images/SearchAndFilter/Search_processSpecification}
+\\
+\includegraphics{Images/SearchAndFilter/Filter_processSpecification}
+\\
+\includegraphics{Images/SearchAndFilter/SearchAndFilter_processSpecification}
+\\
+\\
+
 Prenolan
 \subsubsection{Voting and Evaluation}
 \textbf{Pre-Condition}: A post has to have been created for a user to be able to vote on or evaluate it. Any user can vote on or evaluate a post as long as the user is logged in and a part of a specific Buzz Space. An exception to this rule is when the administration of a Buzz Space set specific rules as to which users (perhaps based on status) can vote on or evaluate posts.
