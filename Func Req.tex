@@ -1,4 +1,4 @@
-﻿\documentclass[a4paper,11pt]{article}
+\documentclass[a4paper,11pt]{article}
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \setcounter{tocdepth}{1}
@@ -543,14 +543,25 @@ as posts created by other users.
 %---------------------------------------------------------------START EDITING HERE FOR FILTERING----------------------------------------------------------------------
 %THABANG
 \section{Filter threads and buzzspaces}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:} This module provides a search and filter functionality.It allows the user to search the current Buzz Space they are in and if need be, filter the results. Users can filter the Buzz Space by tags, date,user or by user-rating. They can also search through the Buzz Space by entering a search-phrase in a search box, alternatively they can both search and filter i.e filter the search-results by tags, date, user or user-rating.\\
+\subsection{Prioritization:} Since the number of threads can be infinitely high, this functionality is important when one wishes to view specific threads\\
 \subsection{Conditions and Data Structures:}
-\subsubsection*{Pre-Conditions:}
-\subsubsection*{Post-Conditions:}
-\subsubsection*{Requests and Results Data Structures:}
-\subsection{Required Functionality:} 
-\subsection{Process Specifications:} 
+\subsubsection*{Pre-Conditions:}\\
+1.A specific Buzz Space has to have been created for a user to be able to search and/or filter.\\
+2.The user has to atleast choose a single filter option and/or enter a search phrase\\
+\subsubsection*{Post-Conditions:}\\
+1.Upon clicking the submit button, the search and/or filter results will be automatically displayed for the user to see.\\
+\subsubsection*{Requests and Results Data Structures:}\\
+\includegraphics{Images/SearchAndFilter/Filter_input_output}\\
+\includegraphics{Images/SearchAndFilter/Search_Input_output}\\
+\includegraphics{Images/SearchAndFilter/SearchAndFilter_input_output}\\
+\subsection{Required Functionality:} \\
+\includegraphics{Images/SearchAndFilter/SearchAndFilter_usecase}\\
+\subsection{Process Specifications:} \\
+\includegraphics{Images/SearchAndFilter/Search_processSpecification}\\
+\includegraphics{Images/SearchAndFilter/Filter_processSpecification}\\
+\includegraphics{Images/SearchAndFilter/SearchAndFilter_processSpecification}\\
+
 
 %THABANG
 \section{Filter threads and buzzspaces}
