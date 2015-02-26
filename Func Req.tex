@@ -68,14 +68,14 @@ to do what).
 \subsubsection*{Pre-Conditions:}
 \begin{itemize}
 	\item The user wanting to create a new BuzzSpace should be logged in to the system and should be registered with the module for which he/she wants to
-	create the BuzzSapce. 
+	create the BuzzSpace. 
 	\item The user should have a high enough status to be allowed to create a BuzzSpace (i.e. lecturer status).
 	\item The module for which the BuzzSpace is being created must be an active module at that time.
 \end{itemize}
 \subsubsection*{Post-Conditions:}
 \begin{itemize}
 	\item A message is displayed to inform the creator of the BuzzSpace that the creation has been successful. Users can now start more threads on this BuzzSpace.
-	\item If this service has been rejected, an exceoption is thrown and an error message will be displayed to the user.
+	\item If this service has been rejected, an exception is thrown and an error message will be displayed to the user.
 \end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
@@ -83,7 +83,7 @@ to do what).
 
 %MICHELLE
 \section{Read BuzzSpace}
-\subsection*{Description:}This use case includes the ability to view BuzzSpaces, this is, to view the different threads in the BuzzSpace (and thus have acces to them), and also to view the
+\subsection*{Description:}This use case includes the ability to view BuzzSpaces, this is, to view the different threads in the BuzzSpace (and thus have access to them), and also to view the
 properties of the specific BuzzSpace (i.e. the permissions that were set, date of creation and the creator of this thread).
 \subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
@@ -118,7 +118,7 @@ properties of the specific BuzzSpace (i.e. the permissions that were set, date o
 %MICHELLE
 \section{Delete BuzzSpace}
 \subsection*{Description:}This use case includes the ability to delete a BuzzSpace when the module is not active anymore, or the BuzzSpace is not used anymore. Only the creator of the 
-BuzzSpace will be able to delete a BuzzSpace, except if he changed the property to let anyone of a certain status be abe to delete it.
+BuzzSpace will be able to delete a BuzzSpace, except if he changed the property to let anyone of a certain status be able to delete it.
 \subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
@@ -152,7 +152,7 @@ BuzzSpace will be able to delete a BuzzSpace, except if he changed the property 
 2.	System responds by presenting user with a form to create thread topic etc\\
 3.	User fills in form ïƒ  topic of thread, tags, etc and submits the form\\
 4.	System reviews the submitted information and  verifies users status and privileges, decorates the thread as needed and checks that all requirements (rules) are followed by the user based on his/her status\\
-5.	 System displays either an acknowledgement or error message based on the pervious checkpoint.
+5.	 System displays either an acknowledgment or error message based on the previous checkpoint.
 \subsection{Prioritization:} 
 This Use case is considered Important
 \subsection{Conditions and Data Structures:}
@@ -165,11 +165,11 @@ a.	The user has a specific status
 1.	The user fills in the form to create a new thread\\
 a.	User must have a specific status in order to perform certain functions when creating a thread
 \subsubsection*{Requests and Results Data Structures:}
-\includegraphics{./Images/CRUDThread/Diagrams/1.png}
+\includegraphics[width=\linewidth]{./Images/CRUDThread/Diagrams/1.png}
 Status can be an abstract class and each sub-class will be a generalization of this class as each new status â€œIS-Aâ€ status.
 Each user â€œHAS-Aâ€ status and thus each new user will be a composition of each specific status class.
-Each thread â€œHAS-Aâ€ user that started it and thus each new thread will be a composition of each user.\\\\
-Steps:\\\\
+Each thread â€œHAS-Aâ€ user that started it and thus each new thread will be a composition of each user.\\
+Steps:\\
 1.	If the user attempts to create a thread, the system will first check if the user is logged in.\\
 1.1.	If so, it will go to number 1 above and check the users status\\
 1.1.1.	The system verifies the status and at number 2 checks that the user has the privileges to create threads of the appropriate size, contents etc.\\
@@ -177,10 +177,10 @@ Steps:\\\\
 1.1.1.2	Otherwise an error message is displayed telling the user that he/she does not have the necessary privileges \\
 2.	If the user is not logged in, an error message is displayed telling the user that he/she is not logged in and it will redirect to the logging page.\\
 \subsection{Required Functionality:} 
-\includegraphics[width=1\linewidth]{./Images/CRUDThread/Diagrams/2.jpg}\\
+\includegraphics[width=\linewidth]{./Images/CRUDThread/Diagrams/2.jpg}
 \subsection{Process Specifications:} 
 Activity Diagram\\
-\includegraphics[width=1\linewidth]{./Images/CRUDThread/Diagrams/3.jpg}\\
+\includegraphics[width=\linewidth]{./Images/CRUDThread/Diagrams/3.jpg}
 \newpage
 Sequence Diagram\\
 \includegraphics[width=1\linewidth]{./Images/CRUDThread/Diagrams/4.jpg}\\
@@ -240,7 +240,7 @@ Sequence Diagram\\
 1.	User activates â€œUpdate Threadâ€ function by selecting the â€œUpdate Threadâ€ option by choosing how they wish to update the thread.\\
 2.	System checks to see whether user is logged in\\
 3.	System reviews the submitted information and  verifies users status and privileges, decorates the thread as needed and checks that all requirements (rules) are followed by the user based on his/her status\\
-4.	 System displays either an acknowledgement or error message based on the pervious checkpoint.\\
+4.	 System displays either an acknowledgment or error message based on the previous checkpoint.\\
 
 \subsection{Prioritization:} 
 This Use case is considered Important\\
@@ -253,7 +253,7 @@ Initiated by User and communicates with system\\
 2.1.	The user has a specific status\\
 2.2.	User must have a specific status in order to perform certain functions when updating a thread\\
 \subsubsection*{Post-Conditions:}
-1.	System displays an acknowledgement message and updates  the new thread  if user follows â€œstatus based rulesâ€\\
+1.	System displays an acknowledgment message and updates  the new thread  if user follows â€œstatus based rulesâ€\\
 2.	Systems display an error message and requests user to restart if user attempts to perform a function that is not within the scope of their status privileges.\\
 \subsubsection*{Requests and Results Data Structures:}
 \includegraphics[width=1\linewidth]{./Images/CRUDThread/Diagrams/9.jpg}\\
@@ -294,7 +294,7 @@ Initiated by User and communicates with system\\
 2.1.	The user has a specific status\\
 2.2.	User must have a specific status in order to delete a thread\\
 \subsubsection*{Post-Conditions:}
-1.	System displays an acknowledgement message and removes  the thread  if user follows â€œstatus based rulesâ€\\
+1.	System displays an acknowledgment message and removes  the thread  if user follows â€œstatus based rulesâ€\\
 2.	Systems display an error message and requests user to restart if user attempts to perform a function that is not within the scope of their status privileges.\\
 \subsubsection*{Requests and Results Data Structures:}
 \includegraphics[width=1\linewidth]{./Images/CRUDThread/Diagrams/13.jpg}\\
@@ -323,7 +323,7 @@ Sequence Diagram\\
 \subsection*{Description:}
 Since a thread can, in theory, grow infinitely long, It is therefor necessary to show only the important aspects of the thread. These are the root post in the thread, the declared answer in the thread and the thread's social tags.\\
 \subsection{Prioritization:}
-This feature is Nice-To-Have. The system will not be immensly devalued if this feature is not added.\\ 
+This feature is Nice-To-Have. The system will not be immensely devalued if this feature is not added.\\ 
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
 1.	The thread must be closed (No longer open for discussion).\\
@@ -380,7 +380,7 @@ Moving a thread can entail either deleting it from its original Buzz space to a 
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
 1.	The user must be logged in as an administrator.\\
-2.	The thread owner must have given constent for the contents of the thread to be moved.\\
+2.	The thread owner must have given consent for the contents of the thread to be moved.\\
 \subsubsection*{Post-Conditions:}
 1.	An error message is displayed if the user is not logged on as admin.\\
 2.	The thread is successfully moved if both pre-conditions are met.\\
@@ -401,44 +401,76 @@ Moving a thread can entail either deleting it from its original Buzz space to a 
 %---------------------------------------------------------------START EDITING HERE FOR POST HANDLING----------------------------------------------------------------------
 %MICHELLE
 \section{Create Post}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case refers to the ability to create a new post on a certain thread. 
+\subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be logged in and registered to the specific BuzzSpace in which the post is created
+	\item The user must adhere to the specifications of which user status levels can create a post on which level at which length.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item If the user did not adhere to the specifications of which user status levels can create a post on which level at which length, an exception will be thrown and an error
+	message will be displayed to the user.
+	\item if plagiarism was detected on the post, then the service is rejected and an exception is thrown with an error message is displayed to the user.
+	\item If netiquette rules were broken,  then the service is rejected and an exception is thrown with an error message is displayed to the user.
+	\item If the user is not logged in or registered for the module, then the service is rejected and an exception is thrown with an error message is displayed to the user.
+	\item If the post was successful, a message is displayed to the user to let him/her know it was successful, and the message can now be read.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
 \section{Read Post}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case gives the functionality to read posts. A post will be marked as read/unread. Anyone can read any posts, if a user is not logged in, a guest account will be used to read posts.
+\subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
-\subsubsection*{Pre-Conditions:}
+\subsubsection*{Pre-Conditions:}None
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item If the user was logged in under his/her name, the post(s) that was/were read will be marked as unread.
+	\item If a user was using the guest account, none of the posts will be marked/unmarked.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
 \section{Update Post}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case refers to the ability to update posts that have already been posted. The user will have a specified time frame in which he/she will have the option to do this.  
+\subsection{Prioritization:} Nice-to-have
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be logged in.
+	\item The user must be the original creator of the post.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item The posts will be updated accordingly.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
 \section{Delete Post}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case includes the ability to delete a post. Only the poster, creator of thread and other people with lecturer status will be able to do this.
+This option will only be available if the user is logged in.
+\subsection{Prioritization:}Important
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be registered for the module.
+	\item The user must be either the creator or a user with lecturer status.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item The service will be rejected if the user is not registered for the specific module, or if the user is not the creator of the thread.
+	\item If the deletion was successful, a message will be displayed to the user to notify him/her and the creator of the thread and/or the creator of thread will be informed of the deletion.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -491,9 +523,9 @@ A vote or evaluation has to be visible to every user (or only some based on the 
 %MARIA
 \section{Post Tagging}
 \subsection*{Description:}
-\textbf{Brief}:One very important functional requierment is the ability for the user to structure the information and content according to his own preferance and needs. Socilal tagging is the feaure that will enable him to do so
+\textbf{Brief}:One very important functional requirement is the ability for the user to structure the information and content according to his own preference and needs. Social tagging is the feature that will enable him to do so
 \subsection{Prioritization:} 
-\textbf{Case-Priority - Important}: The user should be able to tag topics of   interest in the post they created, as well
+\textbf{Case-Priority - Important}: The user should be able to tag topics of interest in the post they created, as well
 as posts created by other users.
 \\Social tagging saves time and keeps user up to date with latest news and post regarding tagged topics
 \\Users can: 
@@ -502,7 +534,7 @@ as posts created by other users.
 \\Follow different authors of posts and index topics and subjects according to tags.
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
-\textbf A post must not have been previously marked as a tag. If there are any keywords that look like "links" and have a hash symbol infront of them within the post, that post may be seen as already tagged.
+\textbf A post must not have been previously marked as a tag. If there are any keywords that look like "links" and have a hash symbol in front of them within the post, that post may be seen as already tagged.
 \subsubsection*{Post-Conditions:}
 \textbf A post becomes a tagged post if it has words with in it that have a hash symbol in front of them.
 \\ words that are tags must change colour and become links.
@@ -529,7 +561,7 @@ as posts created by other users.
 \includegraphics[width=0.9\linewidth]{Tagging_Activity_Diagram}
 \end{center}
 
-\textbf Figure 3: An activity diargram showing the process in wich tags are made and organized. 
+\textbf Figure 3: An activity diagram showing the process in which tags are made and organized. 
 
 %LEAVE
 \newpage
@@ -586,11 +618,18 @@ as posts created by other users.
 %---------------------------------------------------------------START EDITING HERE FOR AUTHORISATION----------------------------------------------------------------------
 %MICHELLE
 \section{Login}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case defines the ability for a user to log into her/his account to activate certain functionalities of the system.
+\subsection{Prioritization:}Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be a registered student.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item If the user is not registered, an exception will be thrown and an error message will be shown to the user.
+	\item If the login was successful, a message will be shown to inform the user that he/she is now logged in. More features will now be available to the user.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -626,11 +665,18 @@ Sequence Diagram\\
 
 %MICHELLE
 \section{Registration}
-\subsection*{Description:}
-\subsection{Prioritization:} 
+\subsection*{Description:}This use case gives the ability to register to a specific BuzzSpace.
+\subsection{Prioritization:} Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+	\item The user must be a registered student of the module associated with the BuzzSpace
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+	\item If the user is not a registered student for the module, an exception is thrown and an error message is shown to the user.
+	\item If the service was successful, a message is shown to the user to inform him/her that it was successful. The user will now be able to operate on the BuzzSpace.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
@@ -705,7 +751,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
-%.........
+%EPHI
 \section{Create Private Message}
 \subsection*{Description:}
 \subsection{Prioritization:} 
@@ -716,7 +762,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
-%.........
+%EPHI
 \section{Read Private Message}
 \subsection*{Description:}
 \subsection{Prioritization:} 
@@ -727,7 +773,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
-%.........
+%EPHI
 \section{Update Private Message}
 \subsection*{Description:}
 \subsection{Prioritization:} 
@@ -738,7 +784,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
-%.........
+%EPHI
 \section{Delete Private Message}
 \subsection*{Description:}
 \subsection{Prioritization:} 
