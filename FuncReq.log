@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  27 FEB 2015 19:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.2.27)  27 FEB 2015 20:14
 entering extended mode
 **FuncReq.tex
 (C:\Users\Residences\Documents\COS301_6b\FuncReq.tex
@@ -1684,7 +1684,7 @@ File: Images/SearchAndFilter/Filter_input_output.jpg Graphic file (type jpg)
 <use Images/SearchAndFilter/Filter_input_output.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/Filter_input_output.jpg used on
  input line 621.
-(pdftex.def)             Requested size: 360.0pt x 101.12828pt.
+(pdftex.def)             Requested size: 180.0pt x 50.5626pt.
 
 <Images/SearchAndFilter/Search_Input_output.jpg, id=540, 390.45876pt x 99.37125
 pt>
@@ -1692,7 +1692,7 @@ File: Images/SearchAndFilter/Search_Input_output.jpg Graphic file (type jpg)
  <use Images/SearchAndFilter/Search_Input_output.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/Search_Input_output.jpg used on
  input line 622.
-(pdftex.def)             Requested size: 360.0pt x 91.6228pt.
+(pdftex.def)             Requested size: 180.0pt x 45.80988pt.
 
 <Images/SearchAndFilter/SearchAndFilter_input_output.jpg, id=541, 389.455pt x 1
 15.43124pt>
@@ -1701,7 +1701,7 @@ e jpg)
  <use Images/SearchAndFilter/SearchAndFilter_input_output.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/SearchAndFilter_input_output.jp
 g used on input line 623.
-(pdftex.def)             Requested size: 360.0pt x 106.70529pt.
+(pdftex.def)             Requested size: 180.0pt x 53.34912pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 621--624
 
@@ -1720,7 +1720,7 @@ File: Images/SearchAndFilter/SearchAndFilter_usecase.jpg Graphic file (type jpg
  <use Images/SearchAndFilter/SearchAndFilter_usecase.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/SearchAndFilter_usecase.jpg use
 d on input line 625.
-(pdftex.def)             Requested size: 143.9978pt x 132.5927pt.
+(pdftex.def)             Requested size: 360.0pt x 331.50919pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 625--626
 
@@ -1739,7 +1739,7 @@ File: Images/SearchAndFilter/Search_processSpecification.jpg Graphic file (type
  <use Images/SearchAndFilter/Search_processSpecification.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/Search_processSpecification.jpg
  used on input line 627.
-(pdftex.def)             Requested size: 143.9978pt x 70.02673pt.
+(pdftex.def)             Requested size: 360.0pt x 175.07828pt.
 
 <Images/SearchAndFilter/Filter_processSpecification.jpg, id=551, 1351.0475pt x 
 556.0775pt>
@@ -1748,7 +1748,7 @@ File: Images/SearchAndFilter/Filter_processSpecification.jpg Graphic file (type
  <use Images/SearchAndFilter/Filter_processSpecification.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/Filter_processSpecification.jpg
  used on input line 628.
-(pdftex.def)             Requested size: 143.9978pt x 59.26805pt.
+(pdftex.def)             Requested size: 360.0pt x 148.16591pt.
 
 <Images/SearchAndFilter/SearchAndFilter_processSpecification.jpg, id=552, 1301.
 86375pt x 499.8675pt>
@@ -1758,7 +1758,7 @@ ile (type jpg)
 <use Images/SearchAndFilter/SearchAndFilter_processSpecification.jpg>
 Package pdftex.def Info: Images/SearchAndFilter/SearchAndFilter_processSpecific
 ation.jpg used on input line 629.
-(pdftex.def)             Requested size: 143.9978pt x 55.28305pt.
+(pdftex.def)             Requested size: 360.0pt x 138.2229pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 627--630
 
@@ -2583,7 +2583,7 @@ Here is how much of TeX's memory you used:
 older/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/New folder/fonts/type1/publi
 c/amsfonts/cm/cmsy10.pfb><C:/New folder/fonts/type1/public/amsfonts/cm/cmtt12.p
 fb>
-Output written on FuncReq.pdf (77 pages, 5309835 bytes).
+Output written on FuncReq.pdf (77 pages, 5309834 bytes).
 PDF statistics:
  839 PDF objects out of 1000 (max. 8388607)
  253 named destinations out of 1000 (max. 500000)
