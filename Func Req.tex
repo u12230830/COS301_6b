@@ -338,7 +338,7 @@ This feature is Nice-To-Have. The system will not be immensely devalued if this 
 Summarizing a thread\\
 \includegraphics[width=1\linewidth]{./Images/SCHMThread/ThreadSummarize.jpg}\\
 \subsection{Process Specifications:} 
-\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/SummarizeAct.jpg}\\
+%\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/SummarizeAct.jpg}\\
 
 %JIMMY
 \section{Hide Thread}
@@ -361,7 +361,7 @@ It is considered critical to the system. It remains key that the system maintain
 Hiding a thread.\\
 \includegraphics[width=1\linewidth]{./Images/SCHMThread/ThreadHide.jpg}\\
 \subsection{Process Specifications:} 
-\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/HideAct.jpg}\\
+%\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/HideAct.jpg}\\
 
 %JIMMY
 \section{Close Thread}
@@ -383,7 +383,7 @@ This feature is considered important. The system can cope without it but it is n
 Closing a thread.\\
 \includegraphics[width=1\linewidth]{./Images/SCHMThread/ThreadClose.jpg}\\
 \subsection{Process Specifications:}
-\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/CloseAct.jpg}\\
+%\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/CloseAct.jpg}\\
 
 %JIMMY
 \section{Move Thread}
@@ -404,7 +404,7 @@ Moving a thread can entail either deleting it from its original Buzz space to a 
 Moving a thread.\\
 \includegraphics[width=1\linewidth]{./Images/SCHMThread/ThreadMove.jpg}\\
 \subsection{Process Specifications:} 
-\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/MoveAct.jpg}\\
+%\includegraphics[width=1.2\linewidth]{./Images/BestAnswer/MoveAct.jpg}\\
 
 %LEAVE
 \newpage
@@ -487,6 +487,7 @@ This option will only be available if the user is logged in.
 \begin{itemize}
 	\item The service will be rejected if the user is not registered for the specific module, or if the user is not the creator of the thread.
 	\item If the deletion was successful, a message will be displayed to the user to notify him/her and the creator of the thread and/or the creator of thread will be informed of the deletion.
+	\item Deleted post will be archived for future reference.
 \end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
@@ -595,18 +596,18 @@ as posts created by other users.
 \subsection*{Description:} This module provides a search and filter functionality.It allows the user to search the current Buzz Space they are in and if need be, filter the results. Users can filter the Buzz Space by tags, date,user or by user-rating. They can also search through the Buzz Space by entering a search-phrase in a search box, alternatively they can both search and filter i.e filter the search-results by tags, date, user or user-rating.\\
 \subsection{Prioritization:} Since the number of threads can be infinitely high, this functionality is important when one wishes to view specific threads\\
 \subsection{Conditions and Data Structures:}
-\subsubsection*{Pre-Conditions:}\\
+\subsubsection*{Pre-Conditions:}
 1.A specific Buzz Space has to have been created for a user to be able to search and/or filter.\\
 2.The user has to atleast choose a single filter option and/or enter a search phrase\\
-\subsubsection*{Post-Conditions:}\\
+\subsubsection*{Post-Conditions:}
 1.Upon clicking the submit button, the search and/or filter results will be automatically displayed for the user to see.\\
-\subsubsection*{Requests and Results Data Structures:}\\
+\subsubsection*{Requests and Results Data Structures:}
 \includegraphics{Images/SearchAndFilter/Filter_input_output}\\
 \includegraphics{Images/SearchAndFilter/Search_Input_output}\\
 \includegraphics{Images/SearchAndFilter/SearchAndFilter_input_output}\\
-\subsection{Required Functionality:} \\
+\subsection{Required Functionality:} 
 \includegraphics{Images/SearchAndFilter/SearchAndFilter_usecase}\\
-\subsection{Process Specifications:} \\
+\subsection{Process Specifications:} 
 \includegraphics{Images/SearchAndFilter/Search_processSpecification}\\
 \includegraphics{Images/SearchAndFilter/Filter_processSpecification}\\
 \includegraphics{Images/SearchAndFilter/SearchAndFilter_processSpecification}\\
