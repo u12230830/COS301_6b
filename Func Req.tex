@@ -746,28 +746,41 @@ A lecturer should get statistical information about each student and generate an
 \textbf{}Important
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
-\textbf{}User logged into the system. 
-\textbf{}User has an already existing profile. 
+\begin{itemize}
+\item User logged into the system. 
+\item User has an already existing profile. 
+\end{itemize}
 \subsubsection*{Post-Conditions:}
-\textbf{}User modifies existing profile: User is logged in and user profile has been modified. 
-\textbf{}User keeps already existing profile: User had logged into the system and the profile had not been modified. 
+\begin{itemize}
+\item User modifies existing profile: User is logged in and user profile has been modified. 
+\item User keeps already existing profile: User had logged into the system and the profile had not been modified. 
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:}
-\includegraphics[width=1\linewidth]{Images/UserProfile/ModifyUserProfile}
+\includegraphics[width=1\linewidth]{./Images/UserProfile/ModifyUserProfileUseCase}
 \subsection{Process Specifications:} 
-\includegraphics[width=1\linewidth]{Images/UserProfile/ModifyUserProfileAcvitiy}
+\includegraphics[width=1\linewidth]{./Images/UserProfile/ModifyUserProfileAcvitiy}
 
 %EPHI
 \section{Create Profile}
 \subsection*{Description:}
+\textbf{Description:}Profile creation allows the user to register and login to the system to view and interact with the BuzzSpace.
 \subsection{Prioritization:} 
 \textbf{}Critical
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+\item User is logged into the system as a guest(There can only be on profile per user). 
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+\item Validates a user logged into the system and has a new profile.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
+\includegraphics[width=1\linewidth]{./Images/UserProfile/CreateUserProfileUseCase}
 \subsection{Process Specifications:} 
+\includegraphics[width=1\linewidth]{./Images/UserProfile/CreateUserProfileAcvitiy}
 
 %EPHI
 \section{Create Private Message}
