@@ -561,14 +561,14 @@ as posts created by other users.
 \subsubsection*{Requests and Results Data Structures:}
 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{Tag_Input_Output_ClassDiagram}
+\includegraphics[width=0.9\linewidth]{Images/SocialTagging/Tag_Input_Output_ClassDiagram}
 \end{center}
 
 \textbf Figure 1: Input and Output classes showing potential attributes and operations *logedIn: boolean = true.
 
 \subsection{Required Functionality:} 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{Tagging_Functional_Requirements}
+\includegraphics[width=0.9\linewidth]{Images/SocialTagging/Tagging_Functional_Requirements}
 \end{center}
 
 \textbf Figure 2: A UML use case diagram showing the required functionality for tagging posts.
@@ -576,7 +576,7 @@ as posts created by other users.
 \subsection{Process Specifications:} 
 
 \begin{center}
-\includegraphics[width=0.9\linewidth]{Tagging_Activity_Diagram}
+\includegraphics[width=0.9\linewidth]{Images/SocialTagging/Tagging_Activity_Diagram}
 \end{center}
 
 \textbf Figure 3: An activity diagram showing the process in which tags are made and organized. 
@@ -710,23 +710,73 @@ Sequence Diagram\\
 \setcounter{section}{0}
 %---------------------------------------------------------------START EDITING HERE FOR REPORTING----------------------------------------------------------------------
 %LUTFIYYA
-\section{Statistical Reporting}
+%Thread Evaluation Report
+\section{Thread Evaluation Report}
 \subsection*{Description:}
-This use case gives the user with certain privileges the ability to calculate statistical information and to generate reports of participants evaluation 
+This use case gives a user with certain privileges the ability to calculate statistical information about threads and to generate reports. The use case include the sourcing of all thread components, the calculating of statistics, construction of report data objects and the rendering of a report onto a user interface or PDF file.
 \subsection{Prioritization:} 
-\textbf{Important}: Evaluation Report
+\textbf{Important}: Thread Evaluation Report
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
-A lecturer has to be a registered user of a Buzz Space and must also be logged in to be able to generate an evaluation report of the students. The UserID of a participant should exist for reporting purposes. The ThreadID has to exist.\\
+A user has to be a registered user of a Buzz Space and must also be logged in to be able to generate a report. The ThreadID has to exist.\\
 \subsubsection*{Post-Conditions:}
-A lecturer should get statistical information about each student and generate an evaluation report for a participant.\\
+A user should get statistical information about threads and generate a threads evaluation report.\\
 \subsubsection*{Requests and Results Data Structures:}
 \includegraphics{Images/Report/Input&Output}
 \subsection{Required Functionality:} 
-\includegraphics[width=15cm,height=10cm]{./Images/Report/functional_requirements}\\
+\includegraphics[width=15cm,height=10cm]{./Images/Report/Thread_FR}\\
 \\
 \subsection{Process Specifications:} 
-\includegraphics[width=15cm,height=10cm]{./Images/Report/process_spec}
+\includegraphics[width=15cm,height=10cm]{./Images/Report/ThreadReport_PS}
+
+%Student Post Report
+\section{Student Post Evaluation Report}
+\subsection*{Description:}
+This use case gives a user with certain privileges the ability to calculate statistical information about students and posts. They can also generate reports. The use case include the sourcing of all student and post components, the calculating of statistics, construction of report data objects and the rendering of a report onto a user interface or PDF file. Users request sufficient information to identify the student and the post. The response object has a timestamp.
+\subsection{Prioritization:} 
+\textbf{Important}: Student and Post Evaluation Report
+\subsection{Conditions and Data Structures:}
+\subsubsection*{Pre-Conditions:}
+A user has to be a registered user of a Buzz Space and must also be logged in to be able to generate a report. The UserID and post has to exist within a given Buzz Space.\\
+\subsubsection*{Post-Conditions:}
+A user should get statistical information about students and posts as well as a student post evaluation report.\\
+\subsubsection*{Requests and Results Data Structures:}
+\includegraphics{Images/Report/Input&Output}
+\subsection{Required Functionality:} 
+\includegraphics[width=15cm,height=10cm]{./Images/Report/studentPost_FR}\\
+\\
+\subsection{Process Specifications:} 
+\includegraphics[width=15cm,height=10cm]{./Images/Report/StudentPost_PS}
+
+%Audit Report
+\section{Audit Report}
+\subsection*{Description:}
+This use case gives a lecturer the ability to generate an audit report for any thread, post or student, which will contain:
+\begin{itemize}
+\item A data/time stamp
+\item User contributions
+\item ThreadID for a specific thread
+\item UserID for a specific user
+\item Action which was performed by a user
+\item All thread creations, modifications, deletions or updates
+\item All user profile creations, modifications, deletions or updates
+\item All post creations, modifications, deletions
+\item All tag creations and usage
+\item The number of votes per post
+\item Users status levels and privileges
+\item Any request to open/close a thread
+\item Any request to generate any report including Thread Evaluation Report and Student Post Report
+\end{itemize}
+
+\subsection{Prioritization:} 
+\textbf{Important}: Audit Report
+\subsection{Conditions and Data Structures:}
+\subsubsection*{Pre-Conditions:}
+A lecturer has to be a registered user of a Buzz Space and must also be logged in to be able to generate a report.\\
+\subsubsection*{Post-Conditions:}
+A lecturer should get a detailed audit report.\\
+%\subsubsection*{Requests and Results Data Structures:}
+%\includegraphics{Images/Report/Input&Output}
 
 %LEAVE
 \newpage
@@ -758,7 +808,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:} 
 \includegraphics[width=1\linewidth]{./Images/UserProfile/CreateUserProfileUseCase}
 \subsection{Process Specifications:} 
-\includegraphics[width=1\linewidth]{./Images/UserProfile/CreateUserProfileAcvitiy}
+\includegraphics[width=1\linewidth]{./Images/UserProfile/CreateUserProfileActivity}
 
 %EPHI
 \section{Modify Profile}
@@ -781,7 +831,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:}
 \includegraphics[width=1\linewidth]{./Images/UserProfile/ModifyUserProfileUseCase}
 \subsection{Process Specifications:} 
-\includegraphics[width=1\linewidth]{./Images/UserProfile/ModifyUserProfileAcvitiy}
+\includegraphics[width=1\linewidth]{./Images/UserProfile/ModifyUserProfileActivity}
 
 
 %EPHI
@@ -803,7 +853,7 @@ A lecturer should get statistical information about each student and generate an
 \subsection{Required Functionality:} 
 \includegraphics[width=1\linewidth]{./Images/UserProfile/ViewUserProfileUseCase}
 \subsection{Process Specifications:} 
-\includegraphics[width=1\linewidth]{./Images/UserProfile/ViewUserProfileAcvitiy}
+\includegraphics[width=1\linewidth]{./Images/UserProfile/ViewUserProfileActivity}
 %EPHI
 \section{Create Private Message}
 \subsection*{Description:}
