@@ -72,7 +72,7 @@ to do what).
 	\item A message is displayed to inform the creator of the BuzzSpace that the creation has been successful. Users can now start more threads on this BuzzSpace.
 	\item If this service has been rejected, an exception is thrown and an error message will be displayed to the user.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
+	
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Create BuzzSpace use case}\\ 
 \includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceCreation.jpg}\\
@@ -91,7 +91,6 @@ properties of the specific BuzzSpace (i.e. the permissions that were set, date o
 \begin{itemize}
 	\item Threads can now be viewed and accessed, and the properties can also be viewed.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Read BuzzSpace use case}\\ 
 \includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceRead.jpg}\\
@@ -114,7 +113,6 @@ properties of the specific BuzzSpace (i.e. the permissions that were set, date o
 	\item A message is displayed to let the user know that the update has been done successfully
 	\item If the service was rejected, an exception is thrown and an error message is displayed to let the user know.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Update BuzzSpace use case}\\
 \includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceUpdate.jpg}\\
@@ -137,7 +135,6 @@ BuzzSpace will be able to delete a BuzzSpace, except if he changed the property 
 \begin{itemize}
 	\item The BuzzSpace is deleted and archived for future reference. 
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Delete BuzzSpace use case}\\
 \includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceDeletion.jpg}\\
@@ -462,7 +459,6 @@ Moving a thread.\\
 	\item If the user is not logged in or registered for the module, then the service is rejected and an exception is thrown with an error message is displayed to the user.
 	\item If the post was successful, a message is displayed to the user to let him/her know it was successful, and the message can now be read.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Create Post use case}\\
 \includegraphics[width=1\linewidth]{./Images/PostHandling/postCreation.jpg}\\
@@ -481,7 +477,6 @@ Moving a thread.\\
 	\item If the user was logged in under his/her name, the post(s) that was/were read will be marked as unread.
 	\item If a user was using the guest account, none of the posts will be marked/unmarked.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Read Post use case}\\
 \includegraphics[width=1\linewidth]{./Images/PostHandling/postRead.jpg}\\
@@ -503,7 +498,6 @@ Moving a thread.\\
 \begin{itemize}
 	\item The posts will be updated accordingly.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Update Post use case}\\
 \includegraphics[width=1\linewidth]{./Images/PostHandling/postUpdate.jpg}\\
@@ -528,7 +522,6 @@ This option will only be available if the user is logged in.
 	\item If the deletion was successful, a message will be displayed to the user to notify him/her and the creator of the thread and/or the creator of thread will be informed of the deletion.
 	\item Deleted post will be archived for future reference.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Delete Post use case}\\
 \includegraphics[width=1\linewidth]{./Images/PostHandling/postDeletion.jpg}\\
@@ -686,7 +679,6 @@ as posts created by other users.
 	\item If the user is not registered, an exception will be thrown and an error message will be shown to the user.
 	\item If the login was successful, a message will be shown to inform the user that he/she is now logged in. More features will now be available to the user.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Login use case}\\
 \includegraphics[width=1\linewidth]{./Images/Author/Login.jpg}\\
@@ -739,7 +731,6 @@ Sequence Diagram\\
 	\item If the user is not a registered student for the module, an exception is thrown and an error message is shown to the user.
 	\item If the service was successful, a message is shown to the user to inform him/her that it was successful. The user will now be able to operate on the BuzzSpace.
 \end{itemize}
-\textbf{Requests and Results Data Structures:}
 \subsubsection{Required Functionality:} 
 \textbf{Use case diagram of the Registration use case}\\
 \includegraphics[width=1\linewidth]{./Images/Author/Registration.jpg}\\
@@ -816,16 +807,17 @@ This use case gives a lecturer the ability to generate an audit report for any t
 \item Any request to generate any report including Thread Evaluation Report and Student Post Report
 \end{itemize}
 
-\subsection{Prioritization:} 
+\subsubsection{Prioritization:} 
 \textbf{Important}: Audit Report
-\subsection{Conditions and Data Structures:}
+\subsubsection{Conditions and Data Structures:}
 \textbf{Pre-Conditions:}
 A lecturer has to be a registered user of a Buzz Space and must also be logged in to be able to generate a report.\\
 \textbf{Post-Conditions:}
 A lecturer should get a detailed audit report.\\
 \textbf{Requests and Results Data Structures:}
+\begin{center}
 \includegraphics{Images/Report/Input&Output}
-
+\end{center}
 %LEAVE
 \newpage
 \begin{center}
@@ -909,10 +901,10 @@ A lecturer should get a detailed audit report.\\
 \includegraphics[width=1\linewidth]{./Images/UserProfile/ViewUserProfileActivity}
 
 %EPHI
-\subsection{Private Message}
+\textbf{Private Message}
 \textbf{Overview}\\
 \includegraphics[width=1\linewidth]{./Images/OverviewDiagrams/PrivateMessage.jpg}\\
-\subsubsection{Create Private Message}
+\subsection{Create Private Message}
 \textbf{Description}Create message allows the user that is logged into the system to create a messages such as email message, sms message and profile private message, and select the recipients then write of message contents and can include attachments to the message. 
 \subsubsection{Prioritization:} 
 \textbf{Nice To Have}
@@ -989,6 +981,6 @@ A lecturer should get a detailed audit report.\\
 
 \end{center}
 %---------------------------------------------------------------START EDITING HERE FOR DOMAIN MODEL----------------------------------------------------------------------
-
+\includegraphics[width=1\linewidth]{./Images/Domain/domainmodel.jpg}
 \end{document}
 
