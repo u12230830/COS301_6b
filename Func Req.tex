@@ -891,26 +891,26 @@ A lecturer should get a detailed audit report.\\
 \includegraphics[width=1\linewidth]{./Images/PrivateMessage/createMessageActivity}
 
 %EPHI
-\section{Update Private Message}
-\subsection*{Description:}
-\subsection{Prioritization:} 
-\subsection{Conditions and Data Structures:}
-\subsubsection*{Pre-Conditions:}
-\subsubsection*{Post-Conditions:}
-\subsubsection*{Requests and Results Data Structures:}
-\subsection{Required Functionality:} 
-\subsection{Process Specifications:} 
-
-%EPHI
 \section{Delete Private Message}
 \subsection*{Description:}
+\textbf{Description}Delete message allows the user that is logged into the system to delete a messages that has been sent to them by a another BuzzSpace user, a message that is out of date or is unimportant for the user, from their inbox.
 \subsection{Prioritization:} 
+\textbf{}Nice To Have
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+\item User is logged into the system as a user not a guest. 
+\item There are messages in the inbox to delete.
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+\item The user is logged into the system and has deleted one or more messages.
+\item The messages deleted are no longer available in the system.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
-\subsection{Required Functionality:} 
+\includegraphics[width=1\linewidth]{./Images/PrivateMessage/deleteMessageUseCase}
 \subsection{Process Specifications:} 
+\includegraphics[width=1\linewidth]{./Images/PrivateMessage/deleteMessageActivity}
 
 %LEAVE
 \newpage
