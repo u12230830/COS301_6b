@@ -59,8 +59,6 @@ Maria Qumalo&29461775\\
 
 %-------------------------------------------------------START EDITING HERE FOR BUZZSPACE HANDLING------------------------------------------------------------
 %MICHELLE
-\textbf{Overview of the Domain}\\\\
-\includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/Overview.jpg}\\
 \section{Create BuzzSpace}
 \subsection*{Description:}This use case encapsulates the ability for a user to create a new BuzzSpace that will be associated with a specific acitve module. 
 Each BuzzSpace will have a root thread to start with. The creator of the BuzzSpace will set properties of the BuzzSpace (i.e which status is needed for a user 
@@ -80,9 +78,7 @@ to do what).
 	\item If this service has been rejected, an exception is thrown and an error message will be displayed to the user.
 \end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
-\subsection{Required Functionality:}
-\textbf{Use case diagram of the Create BuzzSpace use case}\\ 
-\includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceCreation.jpg}\\
+\subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
@@ -97,9 +93,7 @@ properties of the specific BuzzSpace (i.e. the permissions that were set, date o
 	\item Threads can now be viewed and accessed, and the properties can also be viewed.
 \end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
-\subsection{Required Functionality:}
-\textbf{Use case diagram of the Read BuzzSpace use case}\\ 
-\includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceRead.jpg}\\
+\subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
 
 %MICHELLE
@@ -119,8 +113,6 @@ properties of the specific BuzzSpace (i.e. the permissions that were set, date o
 \end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
-\textbf{Use case diagram of the Update BuzzSpace use case}\\
-\includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceUpdate.jpg}\\
 \subsection{Process Specifications:} 
 
 %MICHELLE
@@ -140,8 +132,6 @@ BuzzSpace will be able to delete a BuzzSpace, except if he changed the property 
 \end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
-\textbf{Use case diagram of the Delete BuzzSpace use case}\\
-\includegraphics[width=1\linewidth]{./Images/BuzzSpaceHandling/buzzSpaceDeletion.jpg}\\
 \subsection{Process Specifications:} 
 
 %LEAVE
@@ -894,10 +884,18 @@ A lecturer should get a detailed audit report.\\
 %EPHI
 \section{Read Private Message}
 \subsection*{Description:}
+\textbf{Description}Read message allows the user that is logged into the system to read a messages such as email message, sms message and profile private message that has been sent to them by a another BuzzSpace user.
 \subsection{Prioritization:} 
+\textbf{}Nice To Have
 \subsection{Conditions and Data Structures:}
 \subsubsection*{Pre-Conditions:}
+\begin{itemize}
+\item User is logged into the system as a user not a guest. 
+\end{itemize}
 \subsubsection*{Post-Conditions:}
+\begin{itemize}
+\item The user is logged into the system and has received one or more messages.
+\end{itemize}
 \subsubsection*{Requests and Results Data Structures:}
 \subsection{Required Functionality:} 
 \subsection{Process Specifications:} 
